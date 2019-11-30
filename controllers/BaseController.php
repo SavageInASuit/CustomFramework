@@ -12,7 +12,7 @@ class BaseController {
 
         $sViewPath = $this->sClassDir . '/../views/' . $sViewName . '.php';
 
-        require CONST_SITE_BASE_PATH . '/views/layout.php';
+        require CONST_SITE_BASE_PATH . '/views/shell.php';
     }
 
     public function actionNotFound(){

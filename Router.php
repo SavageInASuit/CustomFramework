@@ -50,7 +50,7 @@ class Router {
 
             // Check if valid Controller found
             if (empty($oController)){
-                Logger::log("Controller was not found...");
+                LogHelper::log("Controller was not found...");
                 $oIndexController = new self::$sIndexController();
                 $oIndexController->actionNotFound();
                 return;
